@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary: #fa6600;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ***Event form*** */
+#event-subscription {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/moto5.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+  color: var(--primary);
+}
+
+#disclaimer h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+#disclaimer .about-event {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+#disclaimer p {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+#disclaimer .event-date {
+  font-weight: bold;
+}
+
+#subscription-form {
+  background-color: var(--secondary);
+  padding: 2em;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 2em;
+}
+
+#subscription-form p {
+  font-size: 1.2em;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  color: var(--text-tertiary);
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--text-color);
+  text-transform: uppercase;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1em;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* benefits section */
+#key-benefits{
+  padding: 2em;
+  text-align: center;
+}
+
+#key-benefits h2{
+  background-color: var(--secondary);
+  padding: 1em;
+  font-weight: 500;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 0;
+}
+
+.benefit {
+  text-align: center;
+  max-width: 300px;
+}
+
+.benefit .benefit-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 1em;
+}
+
+#benefit-1 {
+  background-image: url("../img/hd1.jpg");
+}
+
+#benefit-2 {
+  background-image: url("../img/hd2.jpg");
+}
+
+#benefit-3 {
+  background-image: url("../img/hd3.jpg");
+}
+
+/* event location */
+#location{
+ background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/hd1.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2em;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+#address img{
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1em;
+}
+
+#address-details p {
+  margin-bottom: 0.5em;
+}
+
+#about-location h3{
+  color: var(--primary);
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#about-location p{
+  line-height: 1.5rem;
+}
+
+/* event details container */
+#details{
+  padding: 2em;
+  text-align: center;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.detail img{
+  width: 100%;
+  max-width: 700px;
+}
+
+.detail h3{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.detail-description ul {
+  list-style-position: inside;
+  text-align: left;
+}
+
+.detail-description ul li{
+  margin-bottom: 0.5em;
+}
+
+/* call to action section */
+#cta{
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/moto6.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2em;
+  text-align: center;
+  color: var(--text-color);
+}
+
+#cta h3{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+#cta .btn{
+  width: 80%;
+  max-width: 300px;
+}
+
+/* footer */
+#footer{
+  background-color: var(--secondary);
+  padding: 2em;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+#footer h3{
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#footer p{
+  margin-bottom: 0.5em;
+}
+
+#footer span{
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  #event-subscription {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  #disclaimer h2 {
+    font-size: 3em;
+  }
+
+  #disclaimer .about-event {
+    font-size: 2em;
+  }
+
+  .benefits{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .detail{
+    flex-direction:row ;
+    text-align: left;
+  }
+
+  .detail img{
+    width: 50%;
+  }
+
+  .detail-description{
+    width: 50%;
+  }
+
+  
+}
